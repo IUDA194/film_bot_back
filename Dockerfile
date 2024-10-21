@@ -19,7 +19,8 @@ COPY ./ /app/
 EXPOSE 8110
 
 # Запускаем команду для запуска сервера Django
-CMD python manage.py makemigrations  && \
+CMD ls  && \
+    python manage.py makemigrations  && \
     python manage.py migrate  && \
     python manage.py runserver 0.0.0.0:8000
     #gunicorn --bind 0.0.0.0:8000 cosmomoll_back.wsgi
