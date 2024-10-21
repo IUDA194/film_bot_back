@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-==_t$jeajn^b_7g^ef1a-o*h)uhclto4!spg^(xzor+ajyn=3!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['films-back-svc.film-bot.svc.cluster.local']
 
 
 # Application definition
