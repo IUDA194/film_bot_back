@@ -13,7 +13,7 @@ COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем проект в контейнер
-COPY ./ /app/
+COPY film_parser/ /app/
 
 # Определяем порт, который будет слушать приложение
 EXPOSE 8110
